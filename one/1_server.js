@@ -13,9 +13,6 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end('<h1>Post Page!</h1>');
     }
-
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('<h1>Hello World</h1>');
 });
 
 server.listen(port, host, () => {
